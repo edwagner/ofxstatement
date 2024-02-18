@@ -263,13 +263,15 @@ class OfxWriter(object):
             line.unit_price,
             precision=self.invest_transactions_float_precision,
         )
-        self.buildAmount("UNITS", line.units)
-
+        self.buildAmount(
+            "UNITS",
+            line.units,
+            precision=self.invest_transactions_float_precision,
+        )
         self.buildAmount(
             "TOTAL",
             line.amount,
             False,
-            precision=self.invest_transactions_float_precision,
         )
 
         if inner_tran_type_tag_name:
