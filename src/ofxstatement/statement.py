@@ -34,6 +34,7 @@ INVEST_TRANSACTION_TYPES = [
     "SELLSTOCK",
     "SELLDEBT",
     "INCOME",
+    "INVBANKTRAN",
 ]
 
 INVEST_TRANSACTION_TYPES_DETAILED = [
@@ -45,6 +46,8 @@ INVEST_TRANSACTION_TYPES_DETAILED = [
     "INTEREST",  # only for INCOME
     "CGLONG",  # only for INCOME
     "CGSHORT",  # only for INCOME
+    "INT", # only for INVBANKTRAN
+    "XFER", # only for INVBANKTRAN
 ]
 
 ACCOUNT_TYPE = [
