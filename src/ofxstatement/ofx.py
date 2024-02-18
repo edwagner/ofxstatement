@@ -156,6 +156,8 @@ class OfxWriter(object):
         for security_id in dict.fromkeys(
             map(lambda x: x.security_id, self.statement.invest_lines)
         ):
+            if security_id is None:
+                continue
             tb.start("STOCKINFO", {})
             tb.start("SECINFO", {})
             tb.start("SECID", {})
